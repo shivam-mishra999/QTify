@@ -1,5 +1,5 @@
 import React from 'react'
-import {ReactComponent as SearchIcon} from "../../assets/search_icon.svg";
+import {ReactComponent as SearchIcon} from "../../assets/Search_icon.svg";
 import styles from "./Search.module.css";
 
 export default function Search({placeholder}) {
@@ -9,7 +9,7 @@ export default function Search({placeholder}) {
     }
   return (
     <div>
-      <form className={styles.wrapper}>
+      <form className={styles.wrapper} onSubmit={onSubmit}>
         <input className={styles.search} placeholder={placeholder} required />
         <button className={styles.searchButton} type="submit">
             <SearchIcon />
