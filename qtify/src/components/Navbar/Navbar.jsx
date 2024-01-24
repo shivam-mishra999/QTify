@@ -5,7 +5,7 @@ import Logo from "../Logo/Logo";
 export default function Navbar() {
   return (
     <div>
-      <nav className={styles.Navbar}>
+      <nav className={styles.navbar}>
         <a href="/">
             <Logo />
 
