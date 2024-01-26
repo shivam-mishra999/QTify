@@ -1,4 +1,4 @@
-
+import React, {useState, useEffect} from "react";
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import {Outlet} from "react-router-dom";
@@ -11,7 +11,7 @@ function App() {
   const generateData = (key, source) => {
     source().then((data)=>{
       setData((prevData)=>{
-        return {...prevData, [key]: data}
+        return {...prevData, [key]: data};
       })
     })
   }
@@ -29,7 +29,7 @@ function App() {
     <>
       <div>
         <Navbar />
-        <Outlet context={{data:{topAlbums, newAlbums, songs}}} />
+        <Outlet context={{data: {topAlbums, newAlbums, songs}}} />
       </div>
     </>
   );

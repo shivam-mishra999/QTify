@@ -11,10 +11,11 @@ export default function HomePage() {
     <>
         <Hero />
         <div className={styles.wrapper}>
-            <Section title="Top Albums" data={topAlbums} typle="album" />
-            <Section title="New Albums" data={newAlbums} typle="album" />
+            <Section title="Top Albums" data={topAlbums} type="album" />
+            <Section title="New Albums" data={newAlbums} type="album" />
         </div>
     
     </>
   )
 }
+ 
